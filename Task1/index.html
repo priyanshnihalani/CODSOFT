@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="../fontawesome/css/all.min.css"> -->
+    <style>
+        body::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="font-[Josefin Sans]">
+    <header class="relative lg:relative">
+
+        <!-- Navigation -->
+        <nav class="flex items-center justify-between bg-gray-100 p-5">
+            <!-- Left side -->
+            <div class="flex ml-4 lg:ml-9 items-center">
+                <img src="logo.png" alt="logo" class="w-[100px]">
+            </div>
+
+            <ul class="flex text-sm lg:text-lg lg:flex space-x-3 lg:space-x-8 justify-start ml-2 lg:ml-12 font-semibold">
+                <li class="hover:bg-black hover:text-white hover:px-4 rounded-full">Shop</li>
+                <li class="hover:bg-black hover:text-white hover:px-4 rounded-full">Mobile</li>
+                <li class="hover:bg-black hover:text-white hover:px-4 rounded-full">Tv</li>
+                <li class="hover:bg-black hover:text-white hover:px-4 rounded-full">Laptops & Pc's</li>
+                <li class="hover:bg-black hover:text-white hover:px-4 rounded-full">Accessories</li>
+                <li class="hover:bg-black hover:text-white hover:px-4 rounded-full">SmartThings</li>
+            </ul>
+
+            <!-- Right side -->
+            <ul class="flex text-sm lg:text-lg lg:flex space-x-10 justify-end mr-2 lg:mr-7 font-semibold">
+                <li><i class="fa fa-search"></i></li>
+                <li><i class="fa fa-user"></i></li>
+                <li><i class="fa fa-shopping-cart"></i></li>
+            </ul>
+
+        </nav>
+
+        <!-- Background Image -->
+        <div class="bg-cover bg-center"
+            style="background-image: url('https://images.samsung.com/is/image/samsung/assets/in/home/Bespoke_AI_Homepage_1440x640.jpg?imwidth=2560'); height:80vh;">
+            <div class="absolute bottom-[00px] mb-10 lg:mb-[100px] xl:mb-[200px] sm:mb-50  sm:ml-6 left-0 ml-4 md:ml-24 w-full md:w-[calc(100%-6rem)] ">
+                <h1 class="text-4xl font-bold text-white w-1/2 lg:text-black lg:w-[25%]">Welcome to BESPOKE AI</h1>
+                <p class="mt-5 text-lg w-1/2 text-white lg:w-[25%]  lg:text-black">Early order now and get extra cashback worth <span
+                        class="font-bold">&#8377;11500*</span> Offers end 5 May 2024</p>
+
+                <div class="flex mt-5 space-x-4 xl:space-x-10 items-center">
+                    <a href="#" class="text-lg xl:text-xl font-bold border-b-2 border-black">Learn More</a>
+                    <button
+                        class="text-white bg-black p-2 xl:p-3 rounded-full xl:px-6 font-bold text-lg xl:text-xl">Early
+                        Order Now</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="">
+            <h1 class="text-center mt-10 text-[38px] font-bold">This Week's Highlights</h1>
+            <div>
+                <ul
+                    class="flex flex-wrap justify-center space-x-4 sm:space-x-6 lg:space-x-10 mt-5 sm:mt-8 text-sm sm:text-base font-semibold">
+                    <li class="border-b-2 border-black mb-2 sm:mb-0">New In</li>
+                    <li class="mb-2 sm:mb-0">Mobile</li>
+                    <li class="mb-2 sm:mb-0">TV</li>
+                    <li class="mb-2 sm:mb-0">Appliances</li>
+                    <li class="mb-2 sm:mb-0">Galaxy Ecosystem</li>
+                    <li class="mb-2 sm:mb-0">Samsung Live</li>
+                </ul>
+
+
+                <div class="flex flex-col md:flex-row mt-10">
+                    <div class="md:w-1/2 md:ml-7 mb-4 relative"> <!-- Added relative positioning -->
+                        <div class="relative">
+                            <img src="https://images.samsung.com/is/image/samsung/assets/in/home/0412/BigTile_M55_684x684.jpg?$684_684_JPG$"
+                                alt="Image 1" class="w-full rounded-3xl border-dashed border-2 border-black">
+                            <div class="absolute bottom-0 left-0 right-0 text-white p-4 ">
+                                <h2 class="text-3xl text-center font-semibold">
+                                    Galaxy M55 5G
+                                </h2>
+
+                                <h2 class="text-2xl text-center font-semibold">
+                                    Starting from <span class="font-light">&#8377;24999*</span>
+                                </h2>
+                                <p class="text-center font-light my-6">Incl. &#8377;2000* off with
+                                    instant bank discount</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Second child div with four small divs -->
+                    <div class="md:w-1/2 flex flex-wrap mt-2 md:mt-0 mx-10">
+                        <div class="w-full md:w-1/2 md:pr-2">
+                            <div class="relative">
+
+                                <img src="https://images.samsung.com/is/image/samsung/assets/in/Small_Tile_330x3301.jpg?$330_330_JPG$"
+                                    alt="Small Image 1" class="w-full h-auto rounded-3xl">
+                                <!-- Inserted text -->
+                                <div class="absolute bottom-0 left-0 right-0 text-white p-4 ">
+                                    <h2 class="text-xl text-center font-semibold">
+                                        New Samsung AI TV
+                                    </h2>
+
+                                    <h2 class="text-lg text-center font-semibold">
+                                        Neo Qled 8K
+                                    </h2>
+                                    <p class="text-center text-sm font-light my-3">Get extra benefits up to
+                                        &#8377;15000*</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 md:pl-2 mt-4 md:mt-0">
+                            <!-- Adjusted width and added left padding for small screens -->
+                            <div class="relative">
+
+                                <img src="https://images.samsung.com/is/image/samsung/assets/in/home/Holi_330x330-2.jpg?$330_330_JPG$"
+                                    alt="Small Image 2" class="w-full h-auto rounded-3xl">
+
+                                <div class="absolute bottom-0 left-0 right-0  p-4 ">
+                                    <h2 class="text-xl text-center font-semibold">
+                                        Samsung Corporate+ Program
+                                    </h2>
+                                    <p class="text-center text-sm font-light my-3">up to 10% additional corporate
+                                        discount</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 md:pr-2 mt-2">
+                            <!-- Adjusted width and added right padding for small screens -->
+                            <div class="relative">
+
+                                <img src="https://images.samsung.com/is/image/samsung/assets/in/home/0412/SmallTile_RF65DB90BD12TL_330x330.jpg?$330_330_JPG$"
+                                    alt="Small Image 3" class="w-full h-auto rounded-3xl">
+                                <div class="absolute bottom-0 left-0 right-0 text-white p-4 ">
+                                    <h2 class="text-xl text-center font-semibold">
+                                        650L Convertable French Door
+                                    </h2>
+
+                                    <h2 class="text-lg text-center font-semibold">
+                                        Starting &#8377;165900*
+                                    </h2>
+                                    <p class="text-center text-sm font-light my-3">Incl. &#8377;23000* off with instant
+                                        bank discount & app voucher</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 md:pl-2 mt-2">
+                            <!-- Adjusted width and added left padding for small screens -->
+                            <div class="relative">
+
+                                <img src="https://images.samsung.com/is/image/samsung/assets/in/home/0412/SmallTile_Tab_330x330.jpg?$330_330_JPG$"
+                                    alt="Small Image 4"
+                                    class="w-full h-auto rounded-3xl border-dashed border-2 border-black">
+
+                                <div class="absolute bottom-0 left-0 right-0 text-white p-4 ">
+                                    <h2 class="text-xl text-center font-semibold">
+                                        Galaxy Tab S9 FE
+                                    </h2>
+
+                                    <h2 class="text-center mt-6">
+                                        Avail Benefits up to &#8377;19000*
+                                    </h2>
+                                    <p class="text-center text-sm font-light mb-5">Offers valid till 5th May</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="px-4 lg:px-0">
+                <h1 class="text-center font-bold text-3xl lg:text-4xl mt-8 lg:mt-10">Recommended Products</h1>
+                <div class="flex flex-wrap lg:space-y-5 justify-center mt-8 lg:mt-20 space-y-8 lg:space-y-0 lg:space-x-8">
+                    <!-- Product Card 1 -->
+                    <div class="bg-gray-100 pt-8 pb-8 px-4 lg:px-6 rounded-3xl text-center w-full lg:w-auto">
+                        <img src="https://images.samsung.com/is/image/samsung/p6pim/in/sm-m556blgains/gallery/in-galaxy-m55-5g-sm-m556-sm-m556blgains-thumb-540821597?$216_216_PNG$"
+                            class="mx-auto">
+                        <div>
+                            <h2 class="font-medium mt-4">Galaxy M55 5G (8GB Memory)</h2>
+                            <h3 class="font-light text-sm mt-2">Colour: Light Green</h3>
+                            <div class="flex justify-center items-center mt-2">
+                                <h3 class="border-2 p-1 rounded-full border-black">128 GB</h3>
+                                <h3 class="ml-2">256 GB</h3>
+                            </div>
+                            <h2 class="mt-3 font-medium"><i class="fa fa-inr"></i>26999</h2>
+                            <div class="flex justify-center mt-2">
+                                <p class="font-light text-sm">MRP (Inclusive all Taxes) <i
+                                        class="fa fa-inr"></i><strike>28999</strike> save <i class="fa fa-inr"></i>2000
+                                </p>
+                            </div>
+                            <button class="bg-black text-white px-6 lg:px-8 rounded-3xl py-1 mt-3 w-full lg:w-auto">Buy
+                                Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="bg-gray-100 pt-8 pb-8 px-4 lg:px-6 rounded-3xl text-center w-full lg:w-auto">
+                        <img src="https://images.samsung.com/is/image/samsung/p6pim/in/sm-a356elbjins/gallery/in-galaxy-a35-5g-sm-a356-sm-a356elbjins-thumb-540296439?$216_216_PNG$"
+                            class="mx-auto">
+                        <div>
+                            <h2 class="font-medium mt-4">Galaxy A35 5G (8GB Memory)</h2>
+                            <h3 class="font-light text-sm mt-2">Colour: Awesome Iceblue</h3>
+                            <div class="flex justify-center items-center mt-2">
+                                <h3 class="border-2 p-1 rounded-full border-black">128 GB</h3>
+                                <h3 class="ml-2">256 GB</h3>
+                            </div>
+                            <h2 class="mt-3 font-medium"><i class="fa fa-inr"></i>30999</h2>
+                            <div class="flex justify-center mt-2">
+                                <p class="font-light text-sm">MRP (Inclusive all Taxes) <i
+                                        class="fa fa-inr"></i><strike>33999</strike> save <i class="fa fa-inr"></i>3000
+                                </p>
+                            </div>
+                            <button class="bg-black text-white px-6 lg:px-8 rounded-3xl py-1 mt-3 w-full lg:w-auto">Buy
+                                Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="bg-gray-100 pt-8 pb-8 px-4 lg:px-6 rounded-3xl text-center w-full lg:w-auto">
+                        <img src="https://images.samsung.com/is/image/samsung/p6pim/in/sm-m556blgdins/gallery/in-galaxy-m55-5g-sm-m556-502836-sm-m556blgdins-thumb-540821883?$216_216_PNG$"
+                            class="mx-auto">
+                        <div>
+                            <h2 class="font-medium mt-4">Galaxy M55 5G (12GB Memory)</h2>
+                            <h3 class="font-light text-sm mt-2">Colour: Light Green</h3>
+                            <div class="flex justify-center mt-2">
+                                <h3 class="border-2 p-1 rounded-full border-black">256 GB</h3>
+                            </div>
+                            <h2 class="mt-3 font-medium"><i class="fa fa-inr"></i>32999</h2>
+                            <div class="flex justify-center mt-2">
+                                <p class="font-light text-sm">MRP (Inclusive all Taxes) <i
+                                        class="fa fa-inr"></i><strike>34999</strike> save <i class="fa fa-inr"></i>2000
+                                </p>
+                            </div>
+                            <button class="bg-black text-white px-6 lg:px-8 rounded-3xl py-1 mt-3 w-full lg:w-auto">Buy
+                                Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="bg-gray-100 pt-8 pb-8 px-4 lg:px-6 rounded-3xl text-center w-full lg:w-auto">
+                        <img src="https://images.samsung.com/is/image/samsung/p6pim/in/sm-a156elbpins/gallery/in-galaxy-a15-5g-sm-a156-490596-sm-a156elbpins-thumb-539413346?$216_216_PNG$"
+                            class="mx-auto">
+                        <div>
+                            <h2 class="font-medium mt-4">Galaxy A15 5G (8GB Memory)</h2>
+                            <h3 class="font-light text-sm mt-2">Colour: Light Blue</h3>
+                            <div class="flex justify-center items-center mt-2">
+                                <h3 class="border-2 p-1 rounded-full border-black">128 GB</h3>
+                                <h3 class="ml-2">256 GB</h3>
+                            </div>
+                            <h2 class="mt-3 font-medium"><i class="fa fa-inr"></i>19499</h2>
+                            <div class="flex justify-center mt-2">
+                                <p class="font-light text-sm">MRP (Inclusive all Taxes) <i
+                                        class="fa fa-inr"></i><strike>21499</strike> save <i class="fa fa-inr"></i>2000
+                                </p>
+                            </div>
+                            <button class="bg-black text-white px-6 lg:px-8 rounded-3xl py-1 mt-3 w-full lg:w-auto">Buy
+                                Now</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+    </main>
+    <footer class="flex items-end justify-between mt-20 border-t-2 py-4">
+        <div class="ml-12">
+
+            <p class="text-[12px]">
+                Copyright ⓒ 1995-2024 SAMSUNG All Rights reserved.
+            </p>
+
+            <p class="w-1/2 mt-4 text-[12px]">
+
+                Please dispose of e-waste and plastic waste responsibly.
+                For more information or e-waste pick up, please call 1800 5 7267864 or <span class="text-blue-500">click
+                    here</span> for more details.
+
+            </p>
+            <p class="w-1/2 mt-5 text-[12px]">
+                Registered Office Address: 6th Floor, DLF Centre, Sansad Marg, New Delhi-110001
+                Corporate Identification Number (CIN): U31900DL1995PTC071387
+            </p>
+        </div>
+        <div>
+            <h2 class="mb-4 font-medium">Follow us on.................</h2>
+            <div class="flex space-x-8 text-2xl mr-12 ">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?cs=srgb&dl=pexels-terje-sollie-298863.jpg&fm=jpg -->
+
+</body>

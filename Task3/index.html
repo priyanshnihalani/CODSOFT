@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    div {
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      color: white;
+    }
+
+    table,
+    #calcvalues {
+      position: relative;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%);
+    }
+
+    #calcvalues {
+      width: 80%;
+      font-size: 35px;
+      padding-top: 20px;
+    }
+
+    table {
+      margin-top: 20px;
+    }
+
+    td:not(:nth-child(1)) button {
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg-[white] pt-[30px] pb-[10px] rounded-md shadow-2xl absolute top-1/2 left-1/2">
+    <!-- <h1 class="text-center text-[32px] font-bold m-5 text-[black]">Calculator</h1> -->
+    <input type="text" name="calcvalues" id="calcvalues"
+      class=" relative top-1/2 left-1/2 border-4 text-right rounded-md text-[black] font-bold pr-[12px]"></textarea>
+    <table class="font-bold text-[20px]">
+      <tr class="space-x-12">
+        <td colspan="2"><button class="bg-[orange] rounded-full px-[63px] py-[24px]">Clear</button></td>
+        <td><button class="bg-[orange] rounded-full px-[32px] py-[24px]">=</button></td>
+        <td><button class="bg-[orange] rounded-full px-[32px] py-[24px]">%</button></td>
+      </tr>
+      <tr class="space-x-12">
+        <td><button class="bg-[orange] rounded-full px-[32px] py-[24px]">7</button></td>
+        <td><button class="bg-[orange] rounded-full px-[32px] py-[24px]">8</button></td>
+        <td><button class="bg-[orange] rounded-full px-[32px] py-[24px]">9</button></td>
+        <td><button class="bg-[orange] rounded-full px-[35px] py-[24px]">/</button></td>
+      </tr>
+      <tr class="space-x-12">
+        <td><button class="bg-[orange] rounded-full px-[32px] py-[24px]">4</button></td>
+        <td><button class="bg-[orange] rounded-full px-[32px] py-[24px]">5</button></td>
+        <td><button class="bg-[orange] rounded-full px-[32px] py-[24px]">6</button></td>
+        <td><button class="bg-[orange] rounded-full px-[35px] py-[24px]">*</button></td>
+      </tr>
+      <tr class="space-x-12">
+        <td><button class="bg-[orange] rounded-full px-[32px] py-[24px]">1</button></td>
+        <td><button class="bg-[orange] rounded-full px-[32px] py-[24px]">2</button></td>
+        <td><button class="bg-[orange] rounded-full px-[32px] py-[24px]">3</button></td>
+        <td><button class="bg-[orange] rounded-full px-[35px] py-[24px]">-</button></td>
+      </tr>
+      <tr class="space-x-12">
+        <td><button class="bg-[orange] rounded-full px-[32px] py-[24px]">0</button></td>
+        <td><button class="bg-[orange] rounded-full px-[28px] py-[24px]">00</button></td>
+        <td><button class="bg-[orange] rounded-full px-[32px] py-[24px]">.</button></td>
+        <td><button class="bg-[orange] rounded-full px-[32px] py-[24px]">+</button></td>
+      </tr>
+    </table>
+  </div>
+  <script>
+    let calcvalues = "";
+    let textarea = document.querySelector("input[type=text]")
+    let buttons = document.querySelectorAll("button");
+    Array.from(buttons).forEach((button) => {
+      button.addEventListener("click", (e) => {
+        console.log(e.target.textContent)
+        if (e.target.textContent === "Clear") {
+          calcvalues = ""
+        }
+        else if (e.target.textContent === "=") {
+          if (textarea.value == "") {
+            textarea.value = ""
+          }
+          else{
+            calcvalues = eval(calcvalues)
+          }
+        }
+        else {
+          calcvalues += e.target.textContent
+        }
+        textarea.value = calcvalues
+      })
+    })
+  </script>
+</body>
+
+</html>
